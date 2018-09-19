@@ -1,0 +1,95 @@
+/*Setting the container to full width */
+
+#container{
+    margin: auto;
+    font-family: 'Raleway';
+}
+
+/*Using parallax effect on header*/ 
+
+#slider { 
+    /* The image used */
+    background-image: url("https://picsum.photos/4835/3223?image=1076");
+    /* Set a specific height */
+    height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /*Creating flexbox grid to position elements with
+    /ease going forward*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+/*Welcome Text*/
+
+.welcome{
+    color: white;
+    border: 1px solid white;
+    padding: 50px;
+    margin: auto;
+    font-size: 45px;
+}
+
+/*Showcase for images. Might come back and add animations later and maybe a see more */ 
+
+#portfolio{
+    display:flex;
+    flex-flow: row wrap;
+    margin: 5% auto;
+    justify-content: space-between;
+}
+
+#portfolio div{
+    margin: 10px auto;
+}
+
+/*Using parallax effect on quote/map */ 
+
+#slider-q { 
+    /* The image used */
+    background-image: url("https://picsum.photos/4835/3223?image=1078");
+    z-index: -1;
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /*Creating flexbox grid to position elements with
+    /ease going forward*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+/*Aligning the map to be center and giving it a top margin. Need to come back and make it responsive */
+
+.map{
+    align-self: center;
+    margin-top: 30px;
+}
+
+/*Footer and copyright */
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+    
+}
+
+.copyright{
+    color: white;  
+    align-self: center;
+    padding: 20px;
+}
